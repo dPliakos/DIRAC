@@ -6,8 +6,6 @@ def checkCAOfUser(user, CA):
 
     userCA = gConfig.getValue('/Registry/Users/{}/CA'.format(user))
 
-    gLogger.notice(userCA)
-
     if userCA is None:
         return S_ERROR("Not found")
 
